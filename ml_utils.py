@@ -229,17 +229,6 @@ def classify_image(image_path: str) -> dict:
 
     warning = _image_quality_warning(image_path)
 
-    if demo_mode:
-        note = (
-            "⚠ Model trained on synthetic data — predictions are random. "
-            "Run  python create_cnn.py  to train on your real dataset."
-        )
-    else:
-        note = (
-            f"MobileNetV2 transfer-learning model — "
-            f"best validation accuracy {val_acc * 100:.1f}%. "
-            f"Class mapping: {class_names[0]}=0, {class_names[1]}=1."
-        )
 
     conf_pct = round(confidence * 100, 2)
 
@@ -248,8 +237,7 @@ def classify_image(image_path: str) -> dict:
         "label":          label,
         "confidence":     f"{conf_pct:.2f}%",
         "confidence_pct": conf_pct,
-        "raw_score":      round(score, 5),
-        "note":           note,
+        "raw_score":      round(score, 5)
     }
     if warning:
         result["warning"] = warning

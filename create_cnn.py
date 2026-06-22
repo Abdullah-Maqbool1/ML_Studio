@@ -1,5 +1,3 @@
-
-
 import argparse
 import json
 import os
@@ -11,7 +9,7 @@ MODEL_DIR  = os.path.join(BASE_DIR, "models")
 MODEL_PATH = os.path.join(MODEL_DIR, "cnn_gender_model.keras")
 META_PATH  = os.path.join(MODEL_DIR, "cnn_meta.json")
 
-# ── Your actual dataset path 
+#  Actual dataset path 
 DATASET_PATH = os.path.join(BASE_DIR, "cnn_datasets", "testdata", "testdata")
 
 
@@ -212,7 +210,7 @@ def main():
         for k, v in ft.items():
             history.setdefault(k, []).extend(v)
 
-    # ── Save model & metadata 
+    #  Saving model & metadata 
     model.save(MODEL_PATH)  # .keras format — no TrueDivide issue
 
     meta = {

@@ -5,6 +5,6 @@
     "women"
   ],
   "demo_mode": false,
-  "val_accuracy": 0.8442211151123047,
-  "val_auc": 0.9273002743721008
+  "val_accuracy": 0.8592965006828308,
+  "val_auc": 0.931355893611908
 }
