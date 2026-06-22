@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}ML Studio Enterprise{% endblock %}</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        * { font-family: 'Inter', sans-serif; }
+        .mono { font-family: 'JetBrains Mono', monospace; }
+        .sidebar-link { transition: all 0.2s ease-in-out; border-left: 3px solid transparent; }
+        .sidebar-link:hover { background: rgba(255,255,255,0.05); border-left: 3px solid rgba(255,255,255,0.2); }
+        .sidebar-link.active { background: rgba(99,102,241,0.15); border-left: 3px solid #6366f1; color: #fff; }
+        .card-hover { transition: all 0.2s ease; border: 1px solid #e5e7eb; }
+        .card-hover:hover { border-color: #cbd5e1; box-shadow: 0 4px 20px rgba(0,0,0,0.05); transform: translateY(-1px); }
+        .badge { display: inline-flex; align-items: center; padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase;}
+        ::-webkit-scrollbar { width: 6px; } 
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
+    </style>
+</head>
+<body class="bg-[#f8fafc] text-slate-800 flex min-h-screen">
+
+    <aside class="w-64 min-h-screen bg-[#0f172a] text-slate-300 flex flex-col flex-shrink-0 border-r border-slate-800">
+        <div class="px-6 py-6 border-b border-slate-800">
+            <div class="flex items-center gap-3">
+                
+                <div>
+                    <p class="font-bold text-sm text-white tracking-wide">ML STUDIO</p>
+                    <p class="text-[10px] text-slate-500 uppercase tracking-widest mt-0.5">Production Environment</p>
+                </div>
+            </div>
+        </div>
+
+        <nav class="flex-1 px-3 py-6 space-y-1 overflow-y-auto">
+            <p class="text-[10px] font-semibold text-slate-500 uppercase tracking-widest px-3 mb-3">Clustering Pipelines</p>
+            <a href="/service/dbscan" class="sidebar-link flex items-center gap-3 px-3 py-2 rounded-md text-sm {{ 'active' if task == 'dbscan' else '' }}">
+                <div class="w-2 h-2 rounded-full bg-slate-600 {{ 'bg-indigo-500 shadow-[0_0_8px_rgba(99,102,241,0.8)]' if task == 'dbscan' else '' }}"></div>
+                DBSCAN Model
+            </a>
+            <a href="/service/kmeans" class="sidebar-link flex items-center gap-3 px-3 py-2 rounded-md text-sm {{ 'active' if task == 'kmeans' else '' }}">
+                <div class="w-2 h-2 rounded-full bg-slate-600 {{ 'bg-indigo-500 shadow-[0_0_8px_rgba(99,102,241,0.8)]' if task == 'kmeans' else '' }}"></div>
+                K-Means Engine
+            </a>
+
+            <p class="text-[10px] font-semibold text-slate-500 uppercase tracking-widest px-3 mt-6 mb-3">Computer Vision</p>
+            <a href="/service/cnn" class="sidebar-link flex items-center gap-3 px-3 py-2 rounded-md text-sm {{ 'active' if task == 'cnn' else '' }}">
+                <div class="w-2 h-2 rounded-full bg-slate-600 {{ 'bg-indigo-500 shadow-[0_0_8px_rgba(99,102,241,0.8)]' if task == 'cnn' else '' }}"></div>
+                Image Classification
+            </a>
+
+            <p class="text-[10px] font-semibold text-slate-500 uppercase tracking-widest px-3 mt-6 mb-3">Audio & Speech</p>
+            <a href="/service/sentiment_voice" class="sidebar-link flex items-center gap-3 px-3 py-2 rounded-md text-sm {{ 'active' if task == 'sentiment_voice' else '' }}">
+                <div class="w-2 h-2 rounded-full bg-slate-600 {{ 'bg-indigo-500 shadow-[0_0_8px_rgba(99,102,241,0.8)]' if task == 'sentiment_voice' else '' }}"></div>
+                Voice Sentiment
+            </a>
+            <a href="/service/qa_voice" class="sidebar-link flex items-center gap-3 px-3 py-2 rounded-md text-sm {{ 'active' if task == 'qa_voice' else '' }}">
+                <div class="w-2 h-2 rounded-full bg-slate-600 {{ 'bg-indigo-500 shadow-[0_0_8px_rgba(99,102,241,0.8)]' if task == 'qa_voice' else '' }}"></div>
+                Voice QA System
+            </a>
+
+            <p class="text-[10px] font-semibold text-slate-500 uppercase tracking-widest px-3 mt-6 mb-3">NLP & Text</p>
+            <a href="/service/text_gen" class="sidebar-link flex items-center gap-3 px-3 py-2 rounded-md text-sm {{ 'active' if task == 'text_gen' else '' }}">
+                <div class="w-2 h-2 rounded-full bg-slate-600 {{ 'bg-indigo-500 shadow-[0_0_8px_rgba(99,102,241,0.8)]' if task == 'text_gen' else '' }}"></div>
+                Text Generation
+            </a>
+            <a href="/service/translation" class="sidebar-link flex items-center gap-3 px-3 py-2 rounded-md text-sm {{ 'active' if task == 'translation' else '' }}">
+                <div class="w-2 h-2 rounded-full bg-slate-600 {{ 'bg-indigo-500 shadow-[0_0_8px_rgba(99,102,241,0.8)]' if task == 'translation' else '' }}"></div>
+                EN → Urdu API
+            </a>
+            <a href="/service/ner" class="sidebar-link flex items-center gap-3 px-3 py-2 rounded-md text-sm {{ 'active' if task == 'ner' else '' }}">
+                <div class="w-2 h-2 rounded-full bg-slate-600 {{ 'bg-indigo-500 shadow-[0_0_8px_rgba(99,102,241,0.8)]' if task == 'ner' else '' }}"></div>
+                NER Extraction
+            </a>
+
+            <p class="text-[10px] font-semibold text-slate-500 uppercase tracking-widest px-3 mt-6 mb-3">Data Mining</p>
+            <a href="/service/apriori" class="sidebar-link flex items-center gap-3 px-3 py-2 rounded-md text-sm {{ 'active' if task == 'apriori' else '' }}">
+                <div class="w-2 h-2 rounded-full bg-slate-600 {{ 'bg-indigo-500 shadow-[0_0_8px_rgba(99,102,241,0.8)]' if task == 'apriori' else '' }}"></div>
+                Apriori Rules
+            </a>
+        </nav>
+
+        <div class="px-4 py-4 border-t border-slate-800 bg-[#0b1120]">
+            <div class="flex items-center justify-between">
+                <p class="text-[10px] text-slate-500">System Status</p>
+                <div class="flex items-center gap-1.5">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                    <span class="text-[10px] text-emerald-500 font-medium">Healthy</span>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <div class="flex-1 flex flex-col min-h-screen overflow-hidden">
+        <header class="bg-white border-b border-slate-200 px-8 py-5 flex items-center justify-between sticky top-0 z-10">
+            <div>
+                <p class="text-[11px] text-slate-400 font-semibold uppercase tracking-wider mb-1">{% block breadcrumb %}Workspace / Dashboard{% endblock %}</p>
+                <h1 class="text-xl font-bold text-slate-800 leading-tight">{% block page_title %}Platform Overview{% endblock %}</h1>
+            </div>
+        </header>
+
+        <main class="flex-1 px-8 py-8 overflow-y-auto">
+            {% block content %}{% endblock %}
+        </main>
+    </div>
+
+</body>
+</html>

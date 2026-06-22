@@ -1,0 +1,10 @@
+{
+  "img_size": 128,
+  "class_names": [
+    "men",
+    "women"
+  ],
+  "demo_mode": false,
+  "val_accuracy": 0.8442211151123047,
+  "val_auc": 0.9273002743721008
+}

@@ -1,0 +1,22 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background: #f8fafc;
+    color: #0f172a;
+    font-weight: 700;
+    text-align: left;
+}
+
+th,
+td {
+    border-bottom: 1px solid #e2e8f0;
+    padding: 0.75rem;
+    vertical-align: top;
+}
+
+tr:last-child td {
+    border-bottom: 0;
+}

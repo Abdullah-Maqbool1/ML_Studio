@@ -1,0 +1,16 @@
+# Recommended: Python 3.10 or 3.11 for TensorFlow compatibility.
+Flask
+Werkzeug
+pandas
+numpy
+scikit-learn
+matplotlib
+mlxtend
+tensorflow
+transformers
+torch
+sentencepiece
+sacremoses
+SpeechRecognition
+gTTS
+Pillow
