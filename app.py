@@ -77,7 +77,7 @@ SERVICES = {
         "category": "Information Extraction",
         "description": "Extract people, places, organizations, and other entities from text.",
         "input_type": "text",
-        "placeholder": "Arham studies Applied Machine Learning at UCP in Lahore.",
+        "placeholder": "Abdullahh studies Applied Machine Learning at UCP in Lahore.",
     },
     "apriori": {
         "title": "Apriori Association Rules",
