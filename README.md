@@ -1,4 +1,4 @@
-# 🚀 ML Studio
+#  ML Studio
 
 ### Unified AI & Machine Learning Inference Platform
 
@@ -10,7 +10,7 @@
 
 ---
 
-## 📌 Overview
+##  Overview
 
 ML Studio is a full-stack Machine Learning platform that integrates multiple AI domains into a single web application. The platform enables users to upload datasets, images, audio files, and text inputs, execute machine learning models, and visualize results through a centralized dashboard.
 
@@ -18,7 +18,7 @@ The project combines concepts from Machine Learning, Deep Learning, Natural Lang
 
 ---
 
-## 🎯 Key Highlights
+##  Key Highlights
 
 * Integrated **8+ Machine Learning Modules**
 * Built a complete **Flask-based AI Platform**
@@ -29,7 +29,7 @@ The project combines concepts from Machine Learning, Deep Learning, Natural Lang
 
 ---
 
-## 🏗️ System Architecture
+##  System Architecture
 
 ![Architecture](Screenshots/architecture.png)
 
@@ -65,7 +65,7 @@ ML Studio follows a layered architecture:
 
 ---
 
-## 🔥 Core Features
+##  Core Features
 
 | Domain           | Module                     | Technology           |
 | ---------------- | -------------------------- | -------------------- |
@@ -81,7 +81,7 @@ ML Studio follows a layered architecture:
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 ### Frontend
 
@@ -110,47 +110,47 @@ ML Studio follows a layered architecture:
 
 ### Dashboard
 
-![Dashboard](Screenshots/Picture1.png)
+![Dashboard](Screenshots/Picture10.png)
 
 ### K-Means Clustering
 
 ![KMeans](Screenshots/Picture2.png)
 
-### DBSCAN Clustering
+### CNN Image Classification
 
 ![DBSCAN](Screenshots/Picture3.png)
 
-### CNN Image Classification
+### Voice Sentiment Analysis
 
 ![CNN](Screenshots/Picture4.png)
 
-### Voice Sentiment Analysis
+### Voice Question Anwering
 
 ![Voice Sentiment](Screenshots/Picture5.png)
 
-### Voice Question Answering
+### Text Generation
 
 ![Voice QA](Screenshots/Picture6.png)
 
-### Text Generation
+### English to Urdu Translation
 
 ![Text Generation](Screenshots/Picture7.png)
 
-### English to Urdu Translation
+### Named Entity Recognition 
 
 ![Translation](Screenshots/Picture8.png)
 
-### Named Entity Recognition
+### Apriori Association Rules
 
 ![NER](Screenshots/Picture9.png)
 
-### Apriori Association Rules
+### DBSCAN Clustering
 
 ![Apriori](Screenshots/Picture10.png)
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```bash
 ML_Studio/
@@ -167,7 +167,7 @@ ML_Studio/
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Clone Repository
 
@@ -196,7 +196,7 @@ http://127.0.0.1:5000
 
 ---
 
-## 📈 Future Improvements
+##  Future Improvements
 
 * User Authentication
 * Model Retraining Through UI
@@ -207,24 +207,3 @@ http://127.0.0.1:5000
 
 ---
 
-## 👥 Team
-
-| Name             | Registration Number |
-| ---------------- | ------------------- |
-| Areef ur Rahman  | L1F23BSSE0389       |
-| Abdullah Maqbool | L1F23BSSE0391       |
-| M. Hafeez        | L1F23BSSE0396       |
-
-**Course:** Applied Machine Learning
-**Section:** F2
-**Instructor:** Prof. Hafiz Mahfooz ul Haque
-
----
-
-## ⭐ Resume Keywords
-
-Machine Learning • Deep Learning • Computer Vision • Natural Language Processing • Speech Processing • Transformers • Flask • REST APIs • CNN • GPT-2 • NER • K-Means • DBSCAN • Apriori • Full Stack AI Platform
-
----
-
-### Made with ❤️ at University of Central Punjab
