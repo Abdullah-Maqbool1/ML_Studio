@@ -1,122 +1,87 @@
-# ML Studio
+# 🚀 ML Studio
 
-**A Production-Grade Multi-Model Machine Learning Platform**
-*Applied Machine Learning Semester Project - University of Central Punjab*
+### Unified AI & Machine Learning Inference Platform
 
-![ML Studio Architecture](https://github.com/Abdullah-Maqbool1/ML_Studio/blob/main/Screenshots/architecture.png)
-
----
-
-## Executive Summary
-
-**ML Studio** is a centralized Machine Learning platform that integrates multiple predictive and analytical models into a single web application. The system enables users to upload data, execute machine learning models, and visualize results through an intuitive dashboard.
-
-The platform combines techniques from **Clustering, Computer Vision, Audio & Speech Processing, Natural Language Processing (NLP), and Data Mining**, providing a practical demonstration of concepts learned throughout the Applied Machine Learning course.
+![Python](https://img.shields.io/badge/Python-3.10-blue?style=for-the-badge\&logo=python)
+![Flask](https://img.shields.io/badge/Flask-Web%20Framework-black?style=for-the-badge\&logo=flask)
+![Machine Learning](https://img.shields.io/badge/Machine-Learning-orange?style=for-the-badge)
+![Transformers](https://img.shields.io/badge/HuggingFace-Transformers-yellow?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)
 
 ---
 
-## Features
+## 📌 Overview
 
-### Clustering Pipelines
+ML Studio is a full-stack Machine Learning platform that integrates multiple AI domains into a single web application. The platform enables users to upload datasets, images, audio files, and text inputs, execute machine learning models, and visualize results through a centralized dashboard.
 
-* **K-Means Clustering**
-
-  * Centroid-based unsupervised clustering
-  * Interactive cluster visualization
-
-* **DBSCAN Clustering**
-
-  * Density-based clustering
-  * Automatic noise and outlier detection
-
-### Computer Vision
-
-* **Image Classification**
-
-  * CNN-based binary image classification
-  * Custom dataset training support
-
-### Audio & Speech Processing
-
-* **Voice Sentiment Analysis**
-
-  * Speech-to-Text conversion
-  * Sentiment classification from spoken input
-
-* **Voice Question Answering**
-
-  * Audio input processing
-  * Intelligent voice-based response generation
-
-### NLP & Text Processing
-
-* **Text Generation**
-
-  * GPT-2 based text continuation
-
-* **English to Urdu Translation**
-
-  * Transformer-based neural machine translation
-
-* **Named Entity Recognition (NER)**
-
-  * Detection of:
-
-    * Person Names
-    * Organizations
-    * Locations
-    * Miscellaneous Entities
-
-### Data Mining
-
-* **Apriori Association Rule Mining**
-
-  * Frequent itemset generation
-  * Support calculation
-  * Confidence calculation
-  * Lift metric analysis
+The project combines concepts from Machine Learning, Deep Learning, Natural Language Processing, Speech Processing, Computer Vision, and Data Mining into one unified system.
 
 ---
 
-## System Architecture
+## 🎯 Key Highlights
 
-### Architecture Diagram
-
-![System Architecture](https://github.com/Abdullah-Maqbool1/ML_Studio/blob/main/Screenshots/architecture.png)
-
-### Technology Stack
-
-![Technology Stack](https://github.com/Abdullah-Maqbool1/ML_Studio/blob/main/Screenshots/stack.jpg)
-
-### Core Modules
-
-![Core Modules](https://github.com/Abdullah-Maqbool1/ML_Studio/blob/main/Screenshots/core_modules.jpg)
-
-### Data Flow Pipeline
-
-![Data Flow Pipeline](https://github.com/Abdullah-Maqbool1/ML_Studio/blob/main/Screenshots/dataFlowPipeline.jpg)
+* Integrated **8+ Machine Learning Modules**
+* Built a complete **Flask-based AI Platform**
+* Supports **Clustering, NLP, Speech, Computer Vision, and Data Mining**
+* Interactive web dashboard for model execution
+* Real-time inference and visualization
+* Modular architecture for future MLOps expansion
 
 ---
 
-## Application Screenshots
+## 🏗️ System Architecture
 
-### Main Interface
+![Architecture](Screenshots/architecture.png)
 
-![Screenshot 1](https://github.com/Abdullah-Maqbool1/ML_Studio/blob/main/Screenshots/Picture1.png)
+### Architecture Overview
 
-![Screenshot 2](https://github.com/Abdullah-Maqbool1/ML_Studio/blob/main/Screenshots/Picture2.png)
+ML Studio follows a layered architecture:
 
-![Screenshot 3](https://github.com/Abdullah-Maqbool1/ML_Studio/blob/main/Screenshots/Picture3.png)
+* **Frontend Layer**
 
-![Screenshot 4](https://github.com/Abdullah-Maqbool1/ML_Studio/blob/main/Screenshots/Picture4.png)
+  * Dashboard Interface
+  * File Upload Components
+  * Result Visualization
 
-![Screenshot 5](https://github.com/Abdullah-Maqbool1/ML_Studio/blob/main/Screenshots/Picture5.png)
+* **Backend Layer**
 
-For additional screenshots, visit the **Screenshots** folder in the repository.
+  * Flask REST APIs
+  * Request Routing
+  * Model Management
+
+* **Machine Learning Layer**
+
+  * Clustering Pipelines
+  * NLP Models
+  * Speech Processing
+  * Computer Vision
+  * Data Mining
+
+* **Data Layer**
+
+  * Dataset Storage
+  * Model Storage
+  * Result Management
 
 ---
 
-## Technology Stack
+## 🔥 Core Features
+
+| Domain           | Module                     | Technology           |
+| ---------------- | -------------------------- | -------------------- |
+| Clustering       | K-Means Clustering         | Scikit-Learn         |
+| Clustering       | DBSCAN Clustering          | Scikit-Learn         |
+| Computer Vision  | CNN Image Classification   | TensorFlow / PyTorch |
+| Audio Processing | Voice Sentiment Analysis   | Speech-to-Text + NLP |
+| Audio Processing | Voice Question Answering   | Speech Pipeline      |
+| NLP              | GPT-2 Text Generation      | Hugging Face         |
+| NLP              | English → Urdu Translation | Transformers         |
+| NLP              | Named Entity Recognition   | Transformers         |
+| Data Mining      | Apriori Association Rules  | Mlxtend              |
+
+---
+
+## 🛠️ Tech Stack
 
 ### Frontend
 
@@ -130,52 +95,79 @@ For additional screenshots, visit the **Screenshots** folder in the repository.
 * Python
 * Flask
 
-### Machine Learning Libraries
+### Machine Learning
 
 * Scikit-Learn
-
-  * K-Means
-  * DBSCAN
-  * Apriori
-
-* TensorFlow / PyTorch
-
-  * Convolutional Neural Networks (CNN)
-
+* TensorFlow
+* PyTorch
 * Hugging Face Transformers
-
-  * GPT-2
-  * Translation Models
-  * NER Models
-
-### Deployment
-
-* Flask Local Server
+* Pandas
+* NumPy
 
 ---
 
-## Project Structure
+## 📸 Application Screenshots
+
+### Dashboard
+
+![Dashboard](Screenshots/Picture1.png)
+
+### K-Means Clustering
+
+![KMeans](Screenshots/Picture2.png)
+
+### DBSCAN Clustering
+
+![DBSCAN](Screenshots/Picture3.png)
+
+### CNN Image Classification
+
+![CNN](Screenshots/Picture4.png)
+
+### Voice Sentiment Analysis
+
+![Voice Sentiment](Screenshots/Picture5.png)
+
+### Voice Question Answering
+
+![Voice QA](Screenshots/Picture6.png)
+
+### Text Generation
+
+![Text Generation](Screenshots/Picture7.png)
+
+### English to Urdu Translation
+
+![Translation](Screenshots/Picture8.png)
+
+### Named Entity Recognition
+
+![NER](Screenshots/Picture9.png)
+
+### Apriori Association Rules
+
+![Apriori](Screenshots/Picture10.png)
+
+---
+
+## 📂 Project Structure
 
 ```bash
 ML_Studio/
 │
 ├── app.py
 ├── models/
+├── static/
+├── templates/
 ├── cnn_datasets/
 ├── transformer_text_generation/
-├── static/
-│   ├── css/
-│   ├── js/
-│   └── images/
-│
-├── templates/
 ├── Screenshots/
 └── README.md
 ```
 
 ---
 
-## Installation & Setup
+## 🚀 Getting Started
 
 ### Clone Repository
 
@@ -196,7 +188,7 @@ pip install -r requirements.txt
 python app.py
 ```
 
-### Open in Browser
+Open:
 
 ```text
 http://127.0.0.1:5000
@@ -204,38 +196,35 @@ http://127.0.0.1:5000
 
 ---
 
+## 📈 Future Improvements
 
-## Future Enhancements
-
-* User Authentication & Authorization
+* User Authentication
+* Model Retraining Through UI
+* Docker Deployment
 * Real-Time Analytics Dashboard
-* Model Retraining Through Web Interface
-* Docker Containerization
+* Performance Monitoring
 * Cloud Deployment Support
-* Automated Performance Monitoring
-* PDF Report Generation
-* Experiment Tracking Dashboard
 
 ---
 
-## Learning Outcomes
+## 👥 Team
 
-This project demonstrates practical implementation of:
+| Name             | Registration Number |
+| ---------------- | ------------------- |
+| Areef ur Rahman  | L1F23BSSE0389       |
+| Abdullah Maqbool | L1F23BSSE0391       |
+| M. Hafeez        | L1F23BSSE0396       |
 
-* Unsupervised Learning
-* Deep Learning
-* Natural Language Processing
-* Speech Processing
-* Data Mining
-* Machine Learning Deployment
-* Full-Stack ML Application Development
-
----
-
-## License
-
-This project was developed for educational purposes as part of the **Applied Machine Learning** course at the **University of Central Punjab (UCP)**.
+**Course:** Applied Machine Learning
+**Section:** F2
+**Instructor:** Prof. Hafiz Mahfooz ul Haque
 
 ---
 
-### Made with ❤️ for Applied Machine Learning
+## ⭐ Resume Keywords
+
+Machine Learning • Deep Learning • Computer Vision • Natural Language Processing • Speech Processing • Transformers • Flask • REST APIs • CNN • GPT-2 • NER • K-Means • DBSCAN • Apriori • Full Stack AI Platform
+
+---
+
+### Made with ❤️ at University of Central Punjab
