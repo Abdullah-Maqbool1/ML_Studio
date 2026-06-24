@@ -200,7 +200,3 @@ http://127.0.0.1:5000
 ##  Skills Demonstrated
 
 Machine Learning • Deep Learning • Computer Vision • Natural Language Processing • Speech Processing • Data Mining • Flask • REST APIs • CNNs • Transformers • GPT-2 • NER • K-Means • DBSCAN • Apriori • Full-Stack AI Development
-
----
-
-### Made with ❤️ at University of Central Punjab
